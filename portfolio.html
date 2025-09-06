@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mustafa Elsebaey - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-nJm4wQZq6p+F7f5Hru6l5xW3pF8zEcf6H+H6kQp8aQX2CFSvUOq6NlwWSdZjP3b3b7ZyZ+jBPJ7+0gzWgHD0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+  /* General Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+
+  body {
+    line-height: 1.6;
+    color: #222;
+    background: #f4f6f8; /* Soft gray background */
+  }
+
+  header {
+    background: #008080; /* Teal */
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  header p {
+    margin-top: 8px;
+    font-size: 18px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+
+  nav a:hover {
+    color: #ff9800; /* Warm orange */
+  }
+
+  section {
+    padding: 48px 32px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  h2 {
+    margin-bottom: 24px;
+    font-size: 26px;
+    color: #ff9800; /* Warm orange */
+  }
+  
+
+  .card {
+    background: #fff;
+    padding: 24px;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .skills-list span {
+    background: #008080; /* Teal */
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+
+  footer {
+    background: #008080; /* Teal */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 32px;
+  }
+
+  footer a {
+    color: #ff9800;
+    text-decoration: none;
+  }
+
+  /* Hover Effects */
+  .card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Mustafa Elsebaey Mohamed</h1>
+    <p>Computer Science Student | Aspiring Data Engineer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#courses">Courses</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        Motivated and detail-oriented Computer Science student at October 6 University (2023–2027). 
+        Skilled in C++, Python, SQL, OOP, and data structures, with a growing specialization in 
+        <strong>Data Engineering</strong> through the Microsoft Data Engineer Track (SQL Data Warehousing, Python for Data Science, Azure Data Services).
+      </p>
+      <p>
+        In addition, I have hands-on experience in <strong>Frontend Development</strong> through the 
+        Summer Code Camp 2025, where I learned HTML, CSS, JavaScript, and React.js.
+      </p>
+      <p>
+        I am eager to apply my combined expertise in data engineering and web development 
+        to real-world projects, internships, and innovative tech solutions.
+      </p>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <h3>October 6 University</h3>
+      <p>B.Sc. in Computer Science (2023 – 2027)</p>
+      <p>Focus: Data Engineering, Software Development, Web Technologies</p>
+    </div>
+  </section>
+
+<!-- Skills Section -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="card skills-list">
+    <span>C++</span>
+    <span>Python</span>
+    <span>SQL</span>
+    <span>HTML5</span>
+    <span>CSS3</span>
+    <span>JavaScript</span>
+    <span>React.js</span>
+    <span>Responsive Web Design</span>
+    
+    <!-- Soft Skills (generic icons) -->
+    <span>Teamwork</span>
+    <span>Communication</span>
+    <span>Time Management</span>
+    <span>Fast Learning</span>
+  </div>
+</section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Offered Services</h2>
+    <div class="card">
+      <ul>
+        <li>Frontend Web Development (HTML, CSS, JavaScript, React.js)</li>
+        <li>Data Engineering (SQL, Data Pipelines, Azure Data Services)</li>
+        <li>Database Management & Optimization</li>
+        <li>Embedded Systems Prototyping (Arduino)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>E-Commerce Frontend Store (React)</h3>
+       <img src="fp.png" alt="E-Commerce Project" style="width:100%;border-radius:8px;margin:12px 0;">
+      <p>
+        A responsive and modern e-commerce storefront built as part of the Summer Code Camp 2025.
+        Features include a hero carousel, product listings with images and ratings, testimonials, 
+        and a newsletter subscription section.
+      </p>
+      <p><strong>Tech:</strong> HTML, CSS, JavaScript, React.js, Bootstrap</p>
+      <p>
+        <a href="https://e-commrce-iti-project.vercel.app/" target="_blank">🔗 View Live Project</a>
+      </p>
+    </div>
+    <div class="card">
+      <h3>Hospital Management System (C++)</h3>
+      <p>
+        Console-based system managing hospital branches, doctors, and patients using OOP and
+        custom singly linked lists. Focused on memory allocation, pointers, and CRUD operations.
+      </p>
+      <p><strong>Tech:</strong> C++, OOP, Pointers, Linked Lists</p>
+    </div>
+    <div class="card">
+      <h3>Smart Temperature-Controlled Fan (Arduino)</h3>
+      <p>
+        Built a microcontroller-based fan system using Arduino and LM35 sensor with real-time
+        temperature monitoring and PWM-based fan control.
+      </p>
+      <p><strong>Tech:</strong> Arduino, LM35, PWM, Embedded Systems</p>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses">
+    <h2>Courses</h2>
+    <div class="card">
+      <h3>Microsoft Data Engineer Track (DEPI)</h3>
+      <ul>
+        <li>SQL Data Warehousing & Data Pipelines</li>
+        <li>Python for Data Science</li>
+        <li>Azure Data Services</li>
+        <li>Soft Skills: Freelancing, Communication, English for Work</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Summer Code Camp 2025 – Web Development using React.js</h3>
+      <ul>
+        <li>Duration: 120 Hours</li>
+        <li>Client-Side Technologies, ES.Next, HTML5, CSS3</li>
+        <li>Bootstrap (BS) for responsive UI</li>
+        <li>React.js fundamentals and project development</li>
+        <li>Hands-on final project: E-Commerce Store</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <div class="card">
+      <ul>
+        <li>Completed Microsoft Data Engineer Track (DEPI)</li>
+        <li>Built and deployed a live React.js E-Commerce project</li>
+        <li>Selected for Summer Code Camp 2025 (120-hour training)</li>
+        <li>Consistently ranked top of class in Data Structures & Algorithms coursework</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p><strong>Phone:</strong> +20 01024718420</p>
+      <p><strong>Email:</strong> <a href="mailto:mustafaelsebaee677@gmail.com">mustafaelsebaee677@gmail.com</a></p>
+      <p><strong>Location:</strong> Hadayek El Ahram, Giza, Egypt</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mustafa-elsebaey-896aa7378" target="_blank">linkedin.com/in/mustafa-elsebaey</a></p>
+      <p><strong>Call-to-Action:</strong> 🚀 Open to internships, freelance projects, and collaborations — let’s build something great together!</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Mustafa Elsebaey Mohamed | Built with ❤️ and HTML/CSS</p>
+  </footer>
+</body>
+</html>

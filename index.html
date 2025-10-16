@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Mustafa Elsebaey - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         * {
@@ -704,6 +704,17 @@
                 </div>
             </div>
             <div class="project-card">
+                <div class="project-image">
+                     <img src="Gaza.png" alt="Gaza Project" onerror="this.parentElement.innerHTML='<div style=\'font-size:4rem\'>🌐</div>'">
+                </div>
+                <div class="project-content">
+                    <h3>Gaza Web Platform</h3>
+                    <p>An informative web platform dedicated to showcasing Gaza's history, culture, and tourism. Features a clean, user-friendly interface with responsive design and comprehensive information about Gaza's heritage and attractions. Includes an interactive AI chatbot for user assistance, dedicated problems & solutions page for addressing common issues, and a comprehensive support page for customer help.</p>
+                    <p class="project-tech"><strong>Tech:</strong> HTML, CSS, JavaScript, AI Chatbot, Support Features</p>
+                    <a href="https://elsebae.github.io/GazaWeb/" target="_blank" class="project-link">🔗 View Live Project →</a>
+                </div>
+            </div>
+            <div class="project-card">
                 <div class="project-image">🏥</div>
                 <div class="project-content">
                     <h3>Hospital Management System</h3>
@@ -848,3 +859,21 @@
             rootMargin: '0px 0px -50px 0px'
         };
 
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'all 0.6s ease';
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
